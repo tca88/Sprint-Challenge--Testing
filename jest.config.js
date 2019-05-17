@@ -1,6 +1,6 @@
 // For a detailed explanation regarding each configuration property, visit:
 // https://jestjs.io/docs/en/configuration.html
-const includeCoverage = process.env.DB_ENV === "testing";
+// const includeCoverage = process.env.DB_ENV === "testing";
 
 module.exports = {
   // All imported modules in your tests should be mocked automatically
@@ -19,7 +19,7 @@ module.exports = {
   // clearMocks: false,
 
   // Indicates whether the coverage information should be collected while executing the test
-  // collectCoverage: false,
+  // collectCoverage: includeCoverage,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   // collectCoverageFrom: null,
